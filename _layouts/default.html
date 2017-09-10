@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
+<!-- Look for head.html in /includes and put it here  -->
+{% include head.html %}
 
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+<body>
+    <div class="container">
+        <!-- Look for header.html in /includes and put it here  -->
+        {% include header.html %}
+        <!-- Put content here: index.html, resume.html, etc.  -->
         {{ content }}
-      </div>
+        <!-- Look for footer.html in /includes and put it here  -->
+        {% include footer.html %}
     </div>
-
-    {% include footer.html %}
-
-  </body>
+</body>
 
 </html>
