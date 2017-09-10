@@ -10,16 +10,16 @@ body, html {
 }
 
 /* Center text horizontally */
-#center-content {
+.center-content {
   text-align: center;
 }
 
 /* Textfield with background  */
-#textfield {
+.textfield {
   background-color: #777;
   padding-top: 1%;
   padding-bottom: 1%;
-  opacity: 0.60;
+  opacity: 0.85;
   color: #fff;
 }
 
