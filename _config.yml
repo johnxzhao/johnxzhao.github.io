@@ -12,9 +12,13 @@ description: > # this means to ignore newlines until "baseurl:"
   John Zhao's Website.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://xinuozhao.info/" # the base hostname & protocol for your site
-github_username: johnxzhao
-qq_number: 330748330
+
+# Exclude files
 exclude: ['README.md']
+
+# _config.yml
+gems:
+  - jekyll-angular
 
 # Build settings
 markdown: kramdown

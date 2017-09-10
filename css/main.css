@@ -1,15 +1,46 @@
-html {
-    position: relative;
-    min-height: 100%;
+body, html {
+  margin: 0;
+  color: #777;
+  position: relative;
+  height: 100%;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
+
+/* Center text horizontally */
+#center-content {
+  text-align: center;
 }
+
+/* Textfield with background  */
+#textfield {
+  background-color: #777;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  opacity: 0.60;
+  color: #fff;
+}
+
+/* Customized large h1  */
+h1.h1-lg {
+  font-weight: 500;
+  font-size: 3em;
+}
+
+/* https://css-tricks.com/examples/hrs/  */
+/* hr with customized style  */
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
+  }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 .footer {
+    opacity: 0.80;
     position: absolute; 
     bottom: 0;
     left: 0;

@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <!-- Look for head.html in /includes and put it here  -->
 {% include head.html %}
+  <body ng-controller="myCtrl">
 
-<body>
-    <div class="container">
-        <!-- Look for header.html in /includes and put it here  -->
-        {% include header.html %}
-        <!-- Put content here: index.html, resume.html, etc.  -->
-        {{ content }}
-        <!-- Look for footer.html in /includes and put it here  -->
-        {% include footer.html %}
-    </div>
-</body>
+    <!-- Look for header.html in /includes and put it here  -->
+    {% include header.html %}
+    <!-- Put content here: index.html, resume.html, etc.  -->
+    {{ content }}
+    <!-- Look for footer.html in /includes and put it here  -->
+    {% include footer.html %}
 
+  </body>
 </html>
