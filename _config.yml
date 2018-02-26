@@ -17,7 +17,7 @@ url: "http://xinuozhao.info/" # the base hostname & protocol for your site
 exclude: ['README.md']
 
 # _config.yml
-gems:
+plugins:
   - jekyll-angular
 
 # Build settings
