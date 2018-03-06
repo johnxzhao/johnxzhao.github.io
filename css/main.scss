@@ -19,11 +19,14 @@ body, html {
 
 /* Textfield with background  */
 .textfield {
+  height: 550px;
   background-color: rgb(163, 163, 163);
   padding-top: 1%;
   padding-bottom: 1%;
   opacity: 0.90;
   color: #fff;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Customized large h1  */
@@ -74,4 +77,9 @@ hr.style-two {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
+}
+
+#index-profile {
+  width: 240px;
+  height: 240px;
 }
