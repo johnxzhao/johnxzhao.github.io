@@ -1,5 +1,3 @@
-var app = angular.module('myApp', ['ngAnimate']);
-
 app.controller('myCtrl', function ($scope) {
   $scope.firstName = 'John';
   $scope.lastName = 'Zhao';
