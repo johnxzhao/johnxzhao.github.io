@@ -8,8 +8,8 @@ body, html {
   height: 100%;
   background-image: url("../assets/img/jeshoots-com-219386-unsplash.jpg");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  // background-repeat: no-repeat;
   min-width:330px;
   width: auto !important;
   width:330px;
@@ -22,10 +22,9 @@ body, html {
 
 /* Textfield with background  */
 .textfield {
-  background-color: rgb(163, 163, 163);
+  background-color: rgba(163, 163, 163, 0.9);
   padding-top: 1%;
   padding-bottom: 1%;
-  opacity: 0.90;
   color: #fff;
   margin-left: auto;
   margin-right: auto;
@@ -44,22 +43,6 @@ hr.style-two {
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
   }
-
-/* Sticky footer styles
--------------------------------------------------- */
-.footer {
-  opacity: 0.80;
-  position: fixed; 
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 50px;
-  /* Vertically center the text below */
-  line-height: 50px;
-  background-color: #f5f5f5;
-}
 
 .cn-text {
   font-family: Microsoft YaHei;
@@ -81,23 +64,25 @@ hr.style-two {
   border-bottom-left-radius: 6px;
 }
 
+/* Communication tools icon */
 .icon {
   width: 30px;
   height: 30px;
 }
 
+/* Wechat icon */
 #badge-wechat {
   cursor: pointer;
 }
 
+/* Wechat QR code */
 #qr-wechat {
   margin: 20px 0 0 0;
   width: 130px;
   height: 130px;
 }
 
-/*animation:*/
-
+/* QR code animation: */
 .slideDown.ng-hide {
   height:0;
   transition:height 0.35s ease;
@@ -141,4 +126,32 @@ hr.style-two {
 
   animation-timing-function: ease-out;  
   -webkit-animation-timing-function: ease-out;  
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -50px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 50px;
+}
+.site-footer {
+  opacity: 0.80;
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  /* Vertically center the text below */
+  line-height: 50px;
+  background-color: #f5f5f5;
 }
