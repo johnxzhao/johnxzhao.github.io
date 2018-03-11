@@ -7,23 +7,24 @@ layout: default
       <div class="center-content page-wrap">
         <div class="textfield">
 
-          <br>
-          <img class="non-transparent" src="/assets/img/Profile_2018_rd_sm.png">
+          <div>
+            <img class="non-transparent" id="profile-rd-sm" src="/assets/img/Profile_2018_rd_sm.png">
+            <h2 class="cn-text">赵夕诺</h2>
+            <p>John Zhao</p>
+            <h3 class="cn-text">电子工程师 / 网页开发者</h2>
+            <p>Electronic Engineer and Web Developer</p>
+          </div>
 
-          <h2 class="cn-text" ng-bind="chineseName"></h2>
-          <span> John Zhao </span>
-          <h3 class="cn-text" ng-bind="chineseJobName"></h2>
-          <span ng-bind="jobName"></span>
-
-          <br>
-          <a href="mailto:xinuo.zhao@foxmail.com"><img class="icon" id="badge-email" src="/assets/img/badge_email.png" title="xinuo.zhao@foxmail.com"></a>
-          <a href="https://www.linkedin.com/in/xinuozhao"><img class="icon" id="badge-linkedin" src="/assets/img/badge_linkedin.png" title="Linkedin"></a>
-          <span ng-click="showWechatQR = !showWechatQR" ng-class="{'expandcollapse-heading-collapsed': showWechatQR, 'expandcollapse-heading-expanded': !showWechatQR}">
-            <img class="icon" id="badge-wechat" src="/assets/img/badge_wechat.png" title="Wechat QR">
-          </span>
-          <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=330748330" target="class">
-            <img class="icon" id="badge-wechat" src="/assets/img/badge_qq.png" title="330748330">
-          </a>
+          <div id="icon-line">
+            <a href="mailto:xinuo.zhao@foxmail.com"><img class="icon" id="badge-email" src="/assets/img/badge_email.png" title="xinuo.zhao@foxmail.com"></a>
+            <a href="https://www.linkedin.com/in/xinuozhao"><img class="icon" id="badge-linkedin" src="/assets/img/badge_linkedin.png" title="Linkedin"></a>
+            <span ng-click="showWechatQR = !showWechatQR" ng-class="{'expandcollapse-heading-collapsed': showWechatQR, 'expandcollapse-heading-expanded': !showWechatQR}">
+              <img class="icon" id="badge-wechat" src="/assets/img/badge_wechat.png" title="Wechat QR">
+            </span>
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=330748330" target="class">
+              <img class="icon" id="badge-wechat" src="/assets/img/badge_qq.png" title="330748330">
+            </a>
+          </div>
 
           <div class="slideDown" ng-hide="showWechatQR">
             <div class="expand-collapse-content">
